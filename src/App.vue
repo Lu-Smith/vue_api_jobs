@@ -1,9 +1,9 @@
 <template>
-    <h1 class="text-3xl font-bold underline">Jobs</h1>
+    <Navbar />
 </template>
 
 <script setup lang="ts">
-
+    import Navbar from './components/Navbar.vue';
 </script>
 
 <style scoped>
