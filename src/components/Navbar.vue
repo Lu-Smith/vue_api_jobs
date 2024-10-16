@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-customBlue-300 border-b border-customBlue-600">
+  <nav class="bg-customBlue-800 border-b border-customBlue-600">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="flex h-20 items-center justify-between">
         <div
@@ -12,17 +12,17 @@
             <div class="flex space-x-2">
               <a
                 href="index.html"
-                class="text-white bg-customBlue-500 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                class="text-white bg-customBlue-600 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
                 >Home</a
               >
               <a
                 href="jobs.html"
-                class="text-white hover:bg-customBlue-500 hover:text-white rounded-md px-3 py-2"
+                class="text-white hover:bg-customBlue-600 hover:text-white rounded-md px-3 py-2"
                 >Jobs</a
               >
               <a
                 href="add-job.html"
-                class="text-white hover:bg-customBlue-500 hover:text-white rounded-md px-3 py-2"
+                class="text-white hover:bg-customBlue-600 hover:text-white rounded-md px-3 py-2"
                 >Add Job</a
               >
             </div>
