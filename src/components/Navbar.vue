@@ -12,17 +12,17 @@
             <div class="flex space-x-2">
               <RouterLink
                 to="/"
-                class="text-white bg-customBlue-600 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                :class="[isActiveLink('/') ? 'bg-customBlue-600' : 'hover:bg-customBlue-700', 'text-white', 'px-3', 'rounded-md', 'py-2']"
                 >Home
               </RouterLink>
               <RouterLink
                 to="/jobs"
-                class="text-white hover:bg-customBlue-600 hover:text-white rounded-md px-3 py-2"
+                :class="[isActiveLink('/jobs') ? 'bg-customBlue-600' : 'hover:bg-customBlue-700', 'text-white', 'px-3', 'rounded-md', 'py-2']"
                 >Jobs
               </RouterLink>
               <RouterLink
                 to="/jobs/add"
-                class="text-white hover:bg-customBlue-600 hover:text-white rounded-md px-3 py-2"
+                :class="[isActiveLink('/jobs/add') ? 'bg-customBlue-600' : 'hover:bg-customBlue-700', 'text-white', 'px-3', 'rounded-md', 'py-2']"
                 >Add Job
               </RouterLink >
             </div>
@@ -34,6 +34,11 @@
 </template>
 
 <script setup lang="ts">
-  import { RouterLink } from 'vue-router';
+  import { RouterLink, useRoute } from 'vue-router';
   import logo from '../assets/job-search.gif';
+
+  const isActiveLink = (routePath) => {
+    const route = useRoute();
+    return route.path === routePath;
+  }
 </script>
