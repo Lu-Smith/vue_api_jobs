@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-customBlue-400 py-20 mb-4">
+    <section class="bg-customBlue-800 py-20 mb-4">
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center"
       >
