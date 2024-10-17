@@ -7,7 +7,14 @@
       </div>
 
       <div class="mb-5">
-        {{ truncateDescription }}
+        <div>
+          {{ truncateDescription }}
+        </div>
+        <button 
+        @click="toggleFullDescription" 
+        class="text-customBlue-800 hover:text-customBlue-900 mb-5">
+          {{ showFullDescription ? 'Less' : 'More' }}
+        </button>
       </div>
 
       <h3 class="text-customBlue-800 mb-2">{{ job.salary}} / Year</h3>
@@ -38,6 +45,10 @@
   })
 
   const showFullDescription = ref(false);
+
+  const toggleFullDescription = () => {
+    showFullDescription.value = !showFullDescription.value;
+  }
 
   const truncateDescription = computed(() => {
     let description = props.job?.description;
