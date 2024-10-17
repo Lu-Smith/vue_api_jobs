@@ -11,7 +11,7 @@
           <div class="md:ml-auto">
             <div class="flex space-x-2">
               <a
-                href="index.html"
+                href="/"
                 class="text-white bg-customBlue-600 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
                 >Home</a
               >
