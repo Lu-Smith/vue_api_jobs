@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-customBlue-200 px-4, py-10">
+  <section class="bg-customBlue-800 px-4, py-10">
     <div class="container-xl lg:container m-auto" >
-      <h2 class="text-3xl font-bold text-customBlue-900 mb-6 text-center">
+      <h2 class="text-3xl font-bold text-white mb-6 text-center">
         Browse Jobs
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
