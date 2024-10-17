@@ -5,26 +5,26 @@
         <div
           class="flex flex-1 items-center justify-center md:items-stretch md:justify-start"
         >
-          <a class="flex flex-shrink-0 items-center mr-4" href="index.html">
+          <RouterLink class="flex flex-shrink-0 items-center mr-4" to="/">
             <img class="h-10 w-auto rounded-md" :src="logo" alt="Vue Jobs" />
-          </a>
+          </RouterLink>
           <div class="md:ml-auto">
             <div class="flex space-x-2">
-              <a
-                href="/"
+              <RouterLink
+                to="/"
                 class="text-white bg-customBlue-600 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >Home</a
-              >
-              <a
-                href="/jobs"
+                >Home
+              </RouterLink>
+              <RouterLink
+                to="/jobs"
                 class="text-white hover:bg-customBlue-600 hover:text-white rounded-md px-3 py-2"
-                >Jobs</a
-              >
-              <a
-                href="/jobs/add"
+                >Jobs
+              </RouterLink>
+              <RouterLink
+                to="/jobs/add"
                 class="text-white hover:bg-customBlue-600 hover:text-white rounded-md px-3 py-2"
-                >Add Job</a
-              >
+                >Add Job
+              </RouterLink >
             </div>
           </div>
         </div>
@@ -34,5 +34,6 @@
 </template>
 
 <script setup lang="ts">
+  import { RouterLink } from 'vue-router';
   import logo from '../assets/job-search.gif';
 </script>
