@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-customBlue-400 px-4, py-10">
+  <section class="bg-customBlue-200 px-4, py-10">
     <div class="container-xl lg:container m-auto" >
       <h2 class="text-3xl font-bold text-customBlue-900 mb-6 text-center">
         Browse Jobs
