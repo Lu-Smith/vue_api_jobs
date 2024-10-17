@@ -7,7 +7,7 @@
       </div>
 
       <div class="mb-5">
-        {{ job.description }}
+        {{ truncateDescription }}
       </div>
 
       <h3 class="text-customBlue-800 mb-2">{{ job.salary}} / Year</h3>
@@ -31,7 +31,20 @@
 </template>
 
 <script setup lang="ts">
-  defineProps({
+  import { computed, ref } from 'vue';
+
+  const props = defineProps({
     job: Object 
   })
+
+  const showFullDescription = ref(false);
+
+  const truncateDescription = computed(() => {
+    let description = props.job?.description;
+    if(!showFullDescription.value) {
+      description = description.substring(0, 110) + '...';
+    }
+    return description;
+  })
+
 </script>
