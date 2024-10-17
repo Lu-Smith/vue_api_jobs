@@ -2,7 +2,7 @@
     <Navbar />
     <Hero />
     <HomeCards />
-    <JobsListings :limit="3"/>
+    <JobsListings :limit="3" :show-button="true"/>
 </template>
 
 <script setup lang="ts">
