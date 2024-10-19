@@ -23,10 +23,11 @@
 </template>
 
 <script setup lang="ts">
-  import jobData from '../jobs.json';
   import JobListing from './JobListing.vue';
   import { RouterLink } from 'vue-router';
-  import { ref } from 'vue';
+  import { ref, onMounted } from 'vue';
+  import axios from 'axios';
+  import { ApiTypes } from '../assets/intefaceApi';
 
   defineProps({
     limit: Number,
@@ -36,6 +37,14 @@
     }
   })
 
-  const jobs = ref(jobData);
-  console.log(jobs.value);
+  const jobs = ref<ApiTypes[]>([]);
+
+  onMounted(async () => {
+    try {
+      const response = await axios.get('http://localhost:5000/jobs');
+      jobs.value = response.data;
+    } catch (error) {
+      console.error('Error fetching jobs', error);
+    }
+  })
 </script>
