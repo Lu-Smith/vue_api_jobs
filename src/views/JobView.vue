@@ -1,4 +1,5 @@
 <template>
+  <BackButton />
   <section v-if="!state.isLoading && state.job" class="bg-customBlue-50">
     <div class="container m-auto py-10">
       <div class="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
@@ -87,6 +88,7 @@
   import { reactive, onMounted } from 'vue';
   import { useRoute, RouterLink } from 'vue-router';
   import { ApiTypes } from '../assets/interfaceApi';
+  import BackButton from '../components/BackButton.vue';
   import axios from 'axios';
 
   const route = useRoute();
