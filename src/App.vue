@@ -1,5 +1,5 @@
 <template>
-    <h1>Bla bla bla</h1>
+    <h1>bla bla bla</h1>
     <Navbar />
     <RouterView />
 </template>
